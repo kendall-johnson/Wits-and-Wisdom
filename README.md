@@ -1,4 +1,4 @@
-# Trivia Game by Kendall Johnson
+# Wits and Wisdom by Kendall Johnson
 Description:
 
 
@@ -15,4 +15,4 @@ Description:
 ## Getting Started
 
 ## Next Steps# Wits-and-Wisdom
-# Wits-and-Wisdom
+
