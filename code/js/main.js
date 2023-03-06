@@ -104,7 +104,6 @@
     }
 ]
 
-
 /*----- state variables -----*/ // the two variables that come to mind that are necessary to track and update throughout the course of the game include the current score and the current question number. On a more robust iteration of the game, another state could be the topic of questions that a user selects, which I will attempt to implement, but it is not the main focus for the time being. 
 
 // set a variable to keep track of the current score
@@ -119,7 +118,7 @@ let questionNum;
 // The HTML element that displays the current question.
 const currentQuestion = document.getElementById("question");
 // The HTML element that displays the answer choices.
-const currentChoices = [...document.querySelectorAll('#choice-1, #choice-2, #choice-3, #choice-4')];
+const currentChoices = document.getElementsByClassName("choices-container")
 // The HTML element that displays the current score.
 const currentScore = document.getElementById("score");
 // The HTML element that will make a button function as a next question/skip question feature.
@@ -130,14 +129,38 @@ const skipQuestion = document.getElementById("skip-question");
 
   
 // Add a click event listener to the answer options, so that when a user clicks an answer it will go to the next question. (We also want to display whether that answer was right or wrong with a delay before switching to the next question)
-
+// document.querySelectorAll('#choice-1, #choice-2, #choice-3, #choice-4').addEventListener('click', handleChoice);
 // Add a similar click event listener to the 'next question/skip question' button so that it listens for a click then immediately skips to the next question.
-
+// document.querySelector('#skip-question').addEventListener('click', nextQuestion);
   
 /*----- functions -----*/ // remember to use function render() and to keep it concise by calling other functions within the render. 
-
+init();
 // Define a function to render the current question and answer options.
+function init() {
+ // generate a random index number between 0 and the length of the `questions` array
+  const randomIdx = Math.floor(Math.random()* questions.length);
+  // access the question object at the random index number provided above
+  const randomQuestion = questions[randomIdx];
+  // access the text within the question object along with its potential choices 
+  const currentQuestion = randomQuestion.question;
+  const choices = randomQuestion.choices;
+  // render the question text and choices as HTML elements using DOM manipulation
+  const questionEl = document.getElementById('question');
+  questionEl.innerHTML = currentQuestion; // changing what is inside the ID 'question' in the HTML to the value of the randomly selected question text.
+  
+  const choicesEls = document.querySelectorAll('.choices-container button'); // setting choicesEls equal to all the buttons under the choices-container
+  for (let i = 0; i < choices.length; i++) { // it then iterates through all of those buttons
+    const choiceEl = choicesEls[i]; // sets choiceEl equal to the specific choice button at a given time
+    choiceEl.innerHTML = choices[i]; // set the inside of the specific button choice equal to the necessary potential answer choice from the original constant array.
+  }
 
+  // render score
+
+  // call render()
+}
 // Define a function to handle the user's answer and update the score and current question index. We also want to implement the ability to display whether or not the answer was right within this function as well. 
 
 // Define a function to end the game and display the final score.
+function render() {
+
+}
