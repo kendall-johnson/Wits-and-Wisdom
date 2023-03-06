@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Tenor+Sans&display=swap');
+
 h1 {
     text-align: center;
     font-family: 'Archivo', sans-serif;
 }
+
 
 main {
     display: grid;
@@ -11,49 +14,96 @@ main {
     "choice-3 choice-4"
     "score skip-question";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4rem 3rem 3rem 2rem;
     font-family: 'Tenor Sans', sans-serif;
 }
 
 #question {
     grid-area: question;
+    border-radius: .20rem;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    font-family: 'Tenor Sans', sans-serif;
 }
 
 #choice-1 {
     grid-area: choice-1;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    margin-bottom: 1rem;
+    margin-right: .25rem;
+    padding: 2rem;
 
 }
 
 #choice-2 {
     grid-area: choice-2;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    margin-bottom: 1rem;
+    margin-left: .25rem;
+    padding: 1rem;
 
 }
 
 #choice-3 {
     grid-area: choice-3;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    /* margin-top: 1rem; */
+    margin-right: .25rem;
+    padding: 2rem;
 
 }
 
 #choice-4 {
     grid-area: choice-4;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    /* margin-top: 1rem; */
+    margin-left: .25rem;
+    padding: 1rem;
 
 }
 
 #score {
     grid-area: score;
     margin-top: 1rem;
-    padding: 1rem;
+    margin-right: .25rem;
+    padding: .5rem;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Tenor Sans', sans-serif;
 
 }
 
 #skip-question {
     grid-area: skip-question;
     margin-top: 1rem;
-    padding: 1rem;
+    margin-left: .25rem;
+    padding: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1rem;
+    border-radius: .20rem;
+    border-color: black;
+    background-color: white;
+    
 
 }
