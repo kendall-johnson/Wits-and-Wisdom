@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "question question"
+    "choice-1 choice-2"
+    "choice-3 choice-4"
+    "score skip-question";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4rem 3rem 3rem 2rem;
+    font-family: 'Tenor Sans', sans-serif;
+}
+
+#question {
+    grid-area: question;
+}
+
+#choice-1 {
+    grid-area: choice-1;
+
+}
+
+#choice-2 {
+    grid-area: choice-2;
+
+}
+
+#choice-3 {
+    grid-area: choice-3;
+
+}
+
+#choice-4 {
+    grid-area: choice-4;
+
+}
+
+#score {
+    grid-area: score;
+    margin-top: 1rem;
+    padding: 1rem;
+
+}
+
+#skip-question {
+    grid-area: skip-question;
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+
+}
