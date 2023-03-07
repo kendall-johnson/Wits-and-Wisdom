@@ -110,6 +110,7 @@
 let score = 0;
 let randomQuestion;
 let answerEl;
+let wrong = 0;
 
 // set a variable for which question number the user is on
 // let questionNum;
@@ -127,6 +128,8 @@ const currentScore = document.getElementById("score");
 // The HTML element that will make a button function as a next question/skip question feature.
 const skipQuestion = document.getElementById("skip-question");
 
+const choicesContainer = document.querySelector(".choices-container")
+
 
 /*----- event listeners -----*/  //document + queryselector("the element you wish to grab") + addEventListener('what you are listening for i.e. click', CALLBACK function)
 
@@ -142,6 +145,8 @@ skipQuestion.addEventListener('click', nextQuestion);
 /*----- functions -----*/ // remember to use function render() and to keep it concise by calling other functions within the render. 
 function startGame() {
   score = 0;
+  wrong = 0;
+  document.body.classList.remove("blur"); 
   renderScore(score);
   render();
 }
@@ -175,13 +180,18 @@ function handleChoice(evt) {
 function checkAnswer(selectedAnswer) { // takes the parameter answer as an input and checks if it is the correct one
   if (selectedAnswer === answerEl) {
     score++; // if it is correct, it adds one to the score
+  } else {
+    if (selectedAnswer !== answerEl) {
+      wrong++
+    }
+    render();
   }
   renderScore(score); // then it renders the new updated score accordingly
 }
 
 // create a function that renders the score
 function renderScore(score) {
-  currentScore.innerHTML = `Score: ${score}`; // renders "Score: (whatever current score is based on number of correct answers"
+  currentScore.innerHTML = `SCORE: ${score}`; // renders "Score: (whatever current score is based on number of correct answers"
 }
 
 // Define a function to end the game and display the final score.
@@ -190,29 +200,54 @@ function endGame() {
   // for (let i=0; i < choicesEls.length; i++) {
   //   choicesEls.style.visibility = "hidden";
   // }
+  choicesContainer.style.filter = "blur(3px)" // blurs the answer choices once you reach the end of the game
+  skipQuestion.style.filter = "blur(3px)" // blurs the skip question button once you reach the end of the game
   renderScore(score);
+  addPlayAgain();
+}
 
+function endGameLoss() {
+  questionEl.innerHTML = "You have no Wits or Wisdom! You should consider investing in a book sometime.";
+  // for (let i=0; i < choicesEls.length; i++) {
+  //   choicesEls.style.visibility = "hidden";
+  // }
+  choicesContainer.style.filter = "blur(3px)" // blurs the answer choices once you reach the end of the game
+  skipQuestion.style.filter = "blur(3px)" // blurs the skip question button once you reach the end of the game
+  renderScore(score);
+  addPlayAgain();
   // skipQuestion.remove();
-  // implement restart function upon click of new button
-  const restartBtn = document.createElement("button");
-  restartBtn.innerHTML = "Play Again!";
-  restartBtn.classList.add("restart-button")
-  restartBtn.addEventListener('click', startGame);
-  // add restart button to HTML document
-  document.body.append(restartBtn);
-  // remove the restart button once it is clicked
-  restartBtn.addEventListener('click', function() {
-    restartBtn.remove();
-  })
+}
+
+function addPlayAgain() {
+  // check if a 'Play again' button already exists
+  if (!document.querySelector('.restart-button')) {
+    // implement restart function upon click of new button
+    const restartBtn = document.createElement("button");
+    restartBtn.innerHTML = "Play Again!";
+    restartBtn.classList.add("restart-button")
+    restartBtn.addEventListener('click', startGame);
+    // add restart button to HTML document
+    document.body.append(restartBtn);
+    // remove the restart button once it is clicked
+    restartBtn.addEventListener('click', function() {
+      restartBtn.remove();
+      choicesContainer.style.filter = "none" // unblurs the answer choices once you restart the game
+      skipQuestion.style.filter = "none" // blurs the skip button once you restart the game
+      startGame(); // start the game again
+    });
+  }
 }
 // define a render function that displays all results of above functions if necessary
 function render() {
-  if (score < 2) {
+  if (wrong > 2) { // if you get more than 2 wrong, the game ends
+    endGameLoss();
+  }
+  else if (score < 5) { // if you have less than 5 the next question loads and your score updates
     nextQuestion();
     renderScore(score);
-  } else {
+  } else if (score > 4) { // if you score more than 4, the game ends
     endGame();
   }
 }
 
-render()
+render();
