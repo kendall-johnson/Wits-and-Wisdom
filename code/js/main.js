@@ -3,105 +3,246 @@
   // Define an object, that will store several different trivia questions that will be flucuated through during the process of the game along with the potential options and the correct answer.
   const questions = [
     {
-      question: "How many rings are on the Olympic flag?",
-      choices: ["Six","Three","Eight","Five"],
-      answer: "Five"
+      category: "Sports",
+      question: "What sport is played on the largest court?",
+      choices: ["Tennis", "Volleyball", "Basketball", "Badminton"],
+      answer: "Basketball"
     },
     {
-      question: "Where can you find the London bridge today?",
-      choices: ["United States of America","United Kingdom","Wales","Germany"],
-      answer: "United States of America"
+      category: "Sports",
+      question: "What is the diameter of a basketball hoop in inches?",
+      choices: ["24 inches", "20 inches", "18 inches", "28 inches"],
+      answer: "18 inches"
     },
     {
-      question: "Who starred as Rocky Balboa in the Rocky films?",
-      choices: ["Dwayne Johnson","Robert DeNiro","Sylvester Stallone","Eddie Murphy"],
-      answer: "Sylvester Stallone"
+      category: "Sports",
+      question: "What do you call it when a bowler makes three strikes in a row?",
+      choices: ["Turkey", "Birdie", "Homerun", "Par"],
+      answer: "Turkey"
     },
     {
-      question: "What does the nursery rhyme, ring a ring a roses, refer to?",
-      choices: ["Rings made out of roses","The Black Death","The Vietnam War","The Queen of England falling down"],
-      answer: "The Black Death"
+      category: "Sports",
+      question: "What is the national sport of Canada?",
+      choices: ["Poker", "Lacrosse", "Polo", "Boxing"],
+      answer: "Lacrosse"
     },
     {
-      question: "Whose nose grew whenever he told a lie?",
-      choices: ["Pinocchio","Kenjamin Button","Billy Joel","Spongebob Squarepants"],
-      answer: "Pinocchio"
+      category: "Sports",
+      question: "How many dimples does an average golf ball have?",
+      choices: ["60", "174", "529", "336"],
+      answer: "336"
     },
     {
-      question: "If you had pogonophobia what would you be afraid of?",
-      choices: ["Porridge","Beards","Unsharpened Pencils","Rats"],
-      answer: "Beards"
+      category: "Sports",
+      question: "In the 1971 Olympics, Nadia Comaneci was the first gymnast to score a perfect score. What country was she representing?",
+      choices: ["Romania", "Ukraine", "United States", "France"],
+      answer: "Romania"
     },
     {
-      question: "Which car company makes the Celica?",
-      choices: ["Nissan","Hyundai","Toyota","Ford"],
-      answer: "Toyota"
+      category: "Sports",
+      question: "In what year were women allowed to compete in the modern Olympic games?",
+      choices: ["1964", "1940", "1998", "1900"],
+      answer: "1900"
     },
     {
-      question: "Triskadeccaphobia is the fear of what?",
-      choices: ["The Number 13","Triscuit Crackers","Open Windows","Dull Knives"],
-      answer: "The Number 13"
+      category: "Sports",
+      question: "In which winter sport are the terms “stale fish” and “mule kick” used?",
+      choices: ["Snowboarding", "Bobsledding", "Tobogganing", "Hockey"],
+      answer: "Snowboarding"
     },
     {
-      question: "Ictheologists study what?",
-      choices: ["Fish","DNA Structures","Dinosaur Bones","Social Tendencies of Mice"],
-      answer: "Fish"
+      category: "Sports",
+      question: "During the first-ever modern Olympics, what were the first placers awarded with?",
+      choices: ["Gold Rings", "Silver Medals", "A Platinum Pin", "A Round of Applause"],
+      answer: "Silver Medals"
     },
     {
-      question: "What type of acid is used in car batteries?",
-      choices: ["Hydrochloric","Sulphuric","Phosphoric","Nitric"],
-      answer: "Sulphuric"
+      category: "Sports",
+      question: "How many Olympic games were held in countries that no longer exist?",
+      choices: ["7", "1", "3", "0"],
+      answer: "3"
     },
     {
-      question: "What is a group of owls called?",
-      choices: ["Murder","Family","Gang","Parliament"],
-      answer: "Parliament"
+      category: "History",
+      question: "The United States bought Alaska from which country?",
+      choices: ["Spain", "Mexico", "Russia", "Canada"],
+      answer: "Russia"
     },
     {
-      question: "What plant does the Colorado beetle attack?",
-      choices: ["Sunflower","Petunia","Potato","Oak Tree"],
-      answer: "Potato"
+      category: "History",
+      question: "Who was the fourth president of the United States?",
+      choices: ["William Taft", "James Madison", "Benjamin Franklin", "Abraham Lincoln"],
+      answer: "James Madison"
     },
     {
-      question: "La Giaconda is better known as what?",
-      choices: ["Pam from The Office","Mona Lisa","Lady Gaga","The Queen of Scotland"],
-      answer: "Mona Lisa"
+      category: "History",
+      question: "What was the name of the landmark Supreme Court case that ruled the racial segregation of schools unconstitutional?",
+      choices: ["Brown vs Board of Education", "Roe vs Wade", "Dred Scott v. Sandford", "McCulloch v. Maryland"],
+      answer: "Brown vs Board of Education"
     },
     {
-      question: "Whose autobiography was The Long Walk to Freedom?",
-      choices: ["Dr. Martin Luther King Jr.","Nelson Mandela","Rosa Parks","Malcolm X"],
-      answer: "Nelson Mandela"
+      category: "History",
+      question: "When did the construction of the Great Wall of China begin?",
+      choices: ["4th Century BC", "1945", "7th Century BC", "1626"],
+      answer: "7th Century BC"
     },
     {
-      question: "What was discovered in 1922 by Howard Carter?",
-      choices: ["The Circumferece of Earth","The Cure to Yellow Fever","Tutankamens Tomb","The Lost City of Atlantis"],
-      answer: "Tutankamens Tomb"
+      category: "History",
+      question: "What year did the French Revolution start?",
+      choices: ["1776", "1834", "1789", "1904"],
+      answer: "1789"
     },
     {
-      question: "Who won the World Series in 1987?",
-      choices: ["Minnesota Twins","San Diego Padres","Boston Red Sox","New York Yankees"],
-      answer: "Minnesota Twins"
+      category: "History",
+      question: "Where did Albert Einstein live before moving to the United States?",
+      choices: ["Belgium", "Turkey", "England", "Germany"],
+      answer: "Germany"
     },
     {
-      question: "Which German word means lightning war used in WW2?",
-      choices: ["Blitzkrieg","Nein","Guten Tag","Auf Wiedersehen"],
-      answer: "Blitzkrieg"
+      category: "History",
+      question: "Who was the first ruler of the Mongol Empire?",
+      choices: ["Genghis Khan", "Töregene Khatun", "Oghul Qaimish", "Ariq Böke"],
+      answer: "Genghis Khan"
     },
     {
-      question: "Broccoli belongs to what family of plants?",
-      choices: ["Daisy","Celery","Cabbage","Bedstraw"],
-      answer: "Cabbage"
+      category: "History",
+      question: "What was the capital city of the Inca Empire?",
+      choices: ["Cusco", "Santiago", "Quito", "Iquique"],
+      answer: "Cusco"
     },
     {
-      question: "Who wrote about Willie Wonka and the Chocolate Factory?",
-      choices: ["Roald Dahl","Dr. Seuss","Colleen Hoover","William Shakespeare"],
-      answer: "Roald Dahl"
+      category: "History",
+      question: "In which country was the Battle of Culloden fought in 1746?",
+      choices: ["Monaco", "Scotland", "England", "Montenegro"],
+      answer: "Scotland"
     },
     {
-      question: "Which character has been played by the most actors?",
-      choices: ["Willy Wonka","Spiderman","Sherlock Holmes","Inpector Gadget"],
-      answer: "Sherlock Holmes"
-    }
+      category: "History",
+      question: "Who is the king of the Olympian gods in Greek mythology?",
+      choices: ["Thor", "Hades", "Zeus", "Achilles"],
+      answer: "Zeus"
+    },
+    {
+      category: "Pop-Culture",
+      question: "What singer holds the record for most Grammy nominations?",
+      choices: ["Beyoncé", "Taylor Swift", "Drake", "Alicia Keys"],
+      answer: "Beyoncé"
+    },
+    {
+      category: "Pop-Culture",
+      question: "What morning TV show recently had a scandal because two of its anchors were having an extramarital relationship with each other?",
+      choices: ["Today", "The Morning Show", "Good Morning America", "The View"],
+      answer: "Good Morning America"
+    },
+    {
+      category: "Pop-Culture",
+      question: "Who holds the record for winning the most Oscars?",
+      choices: ["Leonardo DiCaprio", "Walt Disney", "Viola Davis", "Samuel L. Jackson"],
+      answer: "Walt Disney"
+    },
+    {
+      category: "Pop-Culture",
+      question: "How many people watched the Game of Thrones series finale?",
+      choices: ["750,000", "5,600,000", "7,300,000", "19,300,000"],
+      answer: "19,300,000"
+    },
+    {
+      category: "Pop-Culture",
+      question: "What animal did Britney Spears famously carry on her shoulders during a performance?",
+      choices: ["A Hawk", "A Snake", "A Frog", "A Cat"],
+      answer: "A Snake"
+    },
+    {
+      category: "Pop-Culture",
+      question: "Who is the most followed person on Instagram?",
+      choices: ["Cristiano Ronaldo", "Kylie Jenner", "Selena Gomez", "Ariana Grande"],
+      answer: "Cristiano Ronaldo"
+    },
+    {
+      category: "Pop-Culture",
+      question: "What is the most watched YouTube video of all time?",
+      choices: ["Baby by Justin Bieber", "Baby Shark Dance", "Gangnam Style by Psy", "Nyan Cat"],
+      answer: "Baby Shark Dance"
+    },
+    {
+      category: "Pop-Culture",
+      question: "How many actors have played Batman onscreen?",
+      choices: ["6", "11", "19", "13"],
+      answer: "11"
+    },
+    {
+      category: "Pop-Culture",
+      question: "What actor has played a superhero in the most movies?",
+      choices: ["Robert Downey Jr.", "Chris Evans", "Tobey Maguire", "Christian Bale"],
+      answer: "Robert Downey Jr."
+    },
+    {
+      category: "Pop-Culture",
+      question: "How many grandchildren does Kris Jenner have?",
+      choices: ["4", "12", "6", "9"],
+      answer: "12"
+    },
+    {
+      category: "Technology",
+      question: "What startup, acquired by Facebook for $1 billion in 2012, became the fourth most downloaded app in the 2010s?",
+      choices: ["Tinder", "WhatsApp", "Twitter", "Instagram"],
+      answer: "Instagram"
+    },
+    {
+      category: "Technology",
+      question: "What is the programming language developed by James Gosling at Sun Microsystems and named after the type of coffee from Indonesia?",
+      choices: ["Mocha", "JavaScript", "Java", "Latte"],
+      answer: "Java"
+    },
+    {
+      category: "Technology",
+      question: "Pierre Omidyar founded which popular online auction company in 1995 out of San Jose, California?",
+      choices: ["Amazon", "eBay", "Craigslist", "Cars&Bids"],
+      answer: "eBay"
+    },
+    {
+      category: "Technology",
+      question: "In 1999 Shigetaka Kurita invented what keyboard additions for cell phones that would eventually replace emoticons?",
+      choices: ["Emojis", "Smiley Faces", "Face Symbols", "Emotes"],
+      answer: "Emojis"
+    },
+    {
+      category: "Technology",
+      question: "Which American tech company started with its founders' idea to rent out an air mattress in their San Fransisco living room to travelers hoping to avoid the city's high cost of rent?",
+      choices: ["Experian", "Travelocity", "Airbnb", "Yelp"],
+      answer: "Airbnb"
+    },
+    {
+      category: "Technology",
+      question: "What computer and printer giant was founded in 1939 in Palo, Alto, CA?",
+      choices: ["Hewlett-Packard", "Dell", "Brother", "Epson"],
+      answer: "Hewlett-Packard"
+    },
+    {
+      category: "Technology",
+      question: "What company first introduced their Chromebook hardware in 2011?",
+      choices: ["Acer", "Asus", "MSI", "Google"],
+      answer: "Google"
+    },
+    {
+      category: "Technology",
+      question: "How many bytes are in 1 Kilobyte?",
+      choices: ["10", "100", "1,000", "10,000"],
+      answer: "1,000"
+    },
+    {
+      category: "Technology",
+      question: "What is the two digit numeric system, that only uses 0 and 1, that computers operate using?",
+      choices: ["Binary", "Calculator", "Caesar Cipher", "Braille"],
+      answer: "Binary"
+    },
+    {
+      category: "Technology",
+      question: "What year was the first iPhone released?",
+      choices: ["2006", "2007", "2009", "2012"],
+      answer: "2007"
+    },
+
 ]
 
 /*----- state variables -----*/ // the two variables that come to mind that are necessary to track and update throughout the course of the game include the current score and the current question number. On a more robust iteration of the game, another state could be the topic of questions that a user selects, which I will attempt to implement, but it is not the main focus for the time being. 
@@ -111,7 +252,8 @@ let score = 0;
 let randomQuestion;
 let answerEl;
 let wrong = 0;
-
+let categoryQuestions;
+let gameEnded = false;
 // set a variable for which question number the user is on
 // let questionNum;
 
@@ -130,6 +272,12 @@ const skipQuestion = document.getElementById("skip-question");
 
 const choicesContainer = document.querySelector(".choices-container")
 
+const categoryContainerButtons = document.querySelectorAll('.categories-container')
+
+const categoryPage = document.querySelector('.category-page')
+
+const gameplayPage = document.querySelector('gameplay-page')
+
 
 /*----- event listeners -----*/  //document + queryselector("the element you wish to grab") + addEventListener('what you are listening for i.e. click', CALLBACK function)
 
@@ -141,32 +289,56 @@ buttons.forEach(button => {
 })
 // Add a similar click event listener to the 'next question/skip question' button so that it listens for a click then immediately skips to the next question.
 skipQuestion.addEventListener('click', nextQuestion);
+
+categoryContainerButtons.forEach(button => {
+  button.addEventListener('click', selectedCategory)
+})
   
 /*----- functions -----*/ // remember to use function render() and to keep it concise by calling other functions within the render. 
 function startGame() {
   score = 0;
   wrong = 0;
-  document.body.classList.remove("blur"); 
-  renderScore(score);
+  gameEnded = false;
+  questionEl.innerHTML = "Select a Category From The Widgets Above!";
+  resetAnswerChoices();
+}
+
+function selectedCategory(category) {
+  // write a function that when a user clicks on one of the buttons it chooses the category of questions that will be displayed
+  selectedCategory = category.target.textContent;
+  if (category.target.tagName === 'IMG') {
+    selectedCategory = category.target.parentNode.textContent;
+    console.log(category.target.parentNode.textContent)
+  }
+  filteredQuestions = questions.filter(question => question.category === selectedCategory);
+  categoryQuestions = filteredQuestions;
+  resetAnswerChoices();
   render();
 }
+
+
 // create a function to generate a random question and its accompanying choices on the webpage
 function nextQuestion() {
-  // generate a random index number between 0 and the length of the `questions` array
-  const randomIdx = Math.floor(Math.random()* questions.length);
-  // access the question object at the random index number provided above
-  const randomQuestion = questions[randomIdx];
-  // access the text within the question object along with its potential choices 
-  const currentQuestion = randomQuestion.question;
-  const choices = randomQuestion.choices;
-  // render the question text and choices as HTML elements using DOM manipulation
-  questionEl.innerHTML = currentQuestion; // changing what is inside the ID 'question' in the HTML to the value of the randomly selected question text.
-  // initiate a for loop to generate the choices that go along with the randomly generated question into their necessary buttons
-  for (let i = 0; i < choices.length; i++) { // it then iterates through all of those buttons
-    const choiceEl = choicesEls[i]; // sets choiceEl equal to the specific choice button at a given time
-    choiceEl.innerHTML = choices[i]; // set the inside of the specific button choice equal to the necessary potential answer choice from the original constant array.
-  }
-  answerEl = randomQuestion.answer;
+  if (!gameEnded) {
+    if (!categoryQuestions || categoryQuestions.length === 0) {
+      // handle case where categoryQuestions is undefined or empty
+      return;
+    }
+    // generate a random index number between 0 and the length of the `questions` array
+    const randomIdx = Math.floor(Math.random()* 10);
+    // access the question object at the random index number provided above
+    randomQuestion = categoryQuestions[randomIdx];
+    // access the text within the question object along with its potential choices 
+    const currentQuestion = randomQuestion.question;
+    const choices = randomQuestion.choices;
+    // render the question text and choices as HTML elements using DOM manipulation
+    questionEl.innerHTML = currentQuestion; // changing what is inside the ID 'question' in the HTML to the value of the randomly selected question   text.
+    // initiate a for loop to generate the choices that go along with the randomly generated question into their necessary buttons
+    for (let i = 0; i < choices.length; i++) { // it then iterates through all of those buttons
+      const choiceEl = choicesEls[i]; // sets choiceEl equal to the specific choice button at a given time
+      choiceEl.innerHTML = choices[i]; // set the inside of the specific button choice equal to the necessary potential answer choice from the  original constant array.
+    }
+  }  
 }
 
 // create a function that takes note of the users choice
@@ -177,16 +349,20 @@ function handleChoice(evt) {
 }
 
 // create a function that checks if the users choice was the correct answer
-function checkAnswer(selectedAnswer) { // takes the parameter answer as an input and checks if it is the correct one
-  if (selectedAnswer === answerEl) {
-    score++; // if it is correct, it adds one to the score
-  } else {
-    if (selectedAnswer !== answerEl) {
-      wrong++
-    }
+function checkAnswer(selectedAnswer) { // takes the parameter answer as an input and checks if it is the correct one 
+  if (!gameEnded) {
+    answerEl = randomQuestion.answer;
+    if (selectedAnswer === answerEl) {
+      score++; // if it is correct, it adds one to the score
+    } else {
+      if (selectedAnswer !== answerEl) {
+        wrong++
+      }
     render();
+    }
+    renderScore(score); // then it renders the new updated score accordingly
   }
-  renderScore(score); // then it renders the new updated score accordingly
+  
 }
 
 // create a function that renders the score
@@ -196,6 +372,7 @@ function renderScore(score) {
 
 // Define a function to end the game and display the final score.
 function endGame() {
+  gameEnded = true;
   questionEl.innerHTML = "CONGRATULATIONS! You have won Wits & Wisdom!";
   // for (let i=0; i < choicesEls.length; i++) {
   //   choicesEls.style.visibility = "hidden";
@@ -207,6 +384,7 @@ function endGame() {
 }
 
 function endGameLoss() {
+  gameEnded = true;
   questionEl.innerHTML = "You have no Wits or Wisdom! You should consider investing in a book sometime.";
   // for (let i=0; i < choicesEls.length; i++) {
   //   choicesEls.style.visibility = "hidden";
@@ -216,6 +394,12 @@ function endGameLoss() {
   renderScore(score);
   addPlayAgain();
   // skipQuestion.remove();
+}
+
+function resetAnswerChoices() {
+  choicesEls.forEach(choiceEl => {
+    choiceEl.innerHTML = "";
+  })
 }
 
 function addPlayAgain() {
