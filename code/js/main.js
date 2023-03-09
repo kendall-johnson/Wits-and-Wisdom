@@ -295,12 +295,15 @@ categoryContainerButtons.forEach(button => {
 })
   
 /*----- functions -----*/ // remember to use function render() and to keep it concise by calling other functions within the render. 
+startGame();
+
 function startGame() {
   score = 0;
   wrong = 0;
   gameEnded = false;
   questionEl.innerHTML = "Select a Category From The Widgets Above!";
   resetAnswerChoices();
+  renderScore(score);
 }
 
 function selectedCategory(category) {
@@ -320,10 +323,10 @@ function selectedCategory(category) {
 // create a function to generate a random question and its accompanying choices on the webpage
 function nextQuestion() {
   if (!gameEnded) {
-    if (!categoryQuestions || categoryQuestions.length === 0) {
-      // handle case where categoryQuestions is undefined or empty
-      return;
-    }
+    // if (!categoryQuestions || categoryQuestions.length === 0) {
+    //   // handle case where categoryQuestions is undefined or empty
+    //   return;
+    // }
     // generate a random index number between 0 and the length of the `questions` array
     const randomIdx = Math.floor(Math.random()* 10);
     // access the question object at the random index number provided above
@@ -385,7 +388,7 @@ function endGame() {
 
 function endGameLoss() {
   gameEnded = true;
-  questionEl.innerHTML = "You have no Wits or Wisdom! You should consider investing in a book sometime.";
+  questionEl.innerHTML = "GAME OVER! You have no Wits or Wisdom!";
   // for (let i=0; i < choicesEls.length; i++) {
   //   choicesEls.style.visibility = "hidden";
   // }
@@ -409,7 +412,7 @@ function addPlayAgain() {
     const restartBtn = document.createElement("button");
     restartBtn.innerHTML = "Play Again!";
     restartBtn.classList.add("restart-button")
-    restartBtn.addEventListener('click', startGame);
+    // restartBtn.addEventListener('click', startGame);
     // add restart button to HTML document
     document.body.append(restartBtn);
     // remove the restart button once it is clicked
