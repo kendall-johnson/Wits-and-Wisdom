@@ -59,6 +59,66 @@ const questions = [
         choices: ["4", "12", "6", "9"],
         answer: "12"
     },
+    {
+        category: "Pop-Culture",
+        question: "How many times did Ross Geller get divorced on Friends?",
+        choices: ["Never", "Four Times", "Three times", "Once"],
+        answer: "Three times"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Who does Michael Scott hit with company property on company property in The Office?",
+        choices: ["Pam Beasley", "Meredith Palmer", "Kevin", "Dwight Shrute"],
+        answer: "Meredith Palmer"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Who sings the song Say So that is behind the popular TikTok dance?",
+        choices: ["Dua Lipa", "Lil Baby", "Doja Cat", "Ice Spice"],
+        answer: "Doja Cat"
+    },
+    {
+        category: "Pop-Culture",
+        question: "What is Kramers first name on Seinfeld?",
+        choices: ["Cosmo", "Jerry", "Kevin", "Wanda"],
+        answer: "Cosmo"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Who is the half-blood prince in Harry Potter?",
+        choices: ["Ron Weasley", "Harry Potter", "Severus Snape", "Albus Dumbledore"],
+        answer: "Severus Snape"
+    },
+    {
+        category: "Pop-Culture",
+        question: "What is the name of the news series John Krasinski launched during the coronavirus pandemic?",
+        choices: ["Masks Off", "The Quiet Place", "The Same Four Walls", "Some Good News"],
+        answer: "Some Good News"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Which tech entrepreneur named his son X Æ A-12?",
+        choices: ["Elon Musk", "Jeff Bezos", "Fred Flinstone", "Bill Gates"],
+        answer: "Elon Musk"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Which hard seltzer did America face a shortage of in 2019?",
+        choices: ["Happy Dads", "Bud Light Seltzer", "White Claw", "Coors Light Seltzer"],
+        answer: "Cosmo"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Which artist made history in 2020 as the youngest winner of the Grammys four main categories?",
+        choices: ["Billie Eilish", "Dua Lipa", "Doja Cat", "Ariana Grande"],
+        answer: "Billie Eilish"
+    },
+    {
+        category: "Pop-Culture",
+        question: "Kim Kardashian and Kris Humphries were married for how many days?",
+        choices: ["72", "14", "325", "117"],
+        answer: "14"
+    },
 ]
 
 let score = 0;
@@ -94,7 +154,7 @@ function startGame() {
 
 function nextQuestion() {
   if (!gameEnded) {
-    const randomIdx = Math.floor(Math.random()* 10);
+    const randomIdx = Math.floor(Math.random()* 20);
     randomQuestion = questions[randomIdx];
     const currentQuestion = randomQuestion.question;
     const choices = randomQuestion.choices;

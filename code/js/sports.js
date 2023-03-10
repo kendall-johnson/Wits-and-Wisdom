@@ -59,7 +59,66 @@ const questions = [
         choices: ["7", "1", "3", "0"],
         answer: "3"
     },
-    
+    {
+        category: "Sports",
+        question: "Raging Bull, the classic 1980 movie is about which real life boxer?",
+        choices: ["Rocky Balboa", "Mike Tyson", "George Foreman", "Jake LaMotta"],
+        answer: "Jake LaMotta"
+    },
+    {
+        category: "Sports",
+        question: "Which boxer inflicted Muhammad Alis first defeat in professional boxing?",
+        choices: ["Joe Frazier", "Larry Holmes", "Leon Spinks", "Ken Norton"],
+        answer: "Joe Frazier"
+    },
+    {
+        category: "Sports",
+        question: "Which baseball player holds the record for the most home runs in a single season?",
+        choices: ["Barry Bonds", "Babe Ruth", "Aaron Judge", "Kirby Puckett"],
+        answer: "Barry Bonds"
+    },
+    {
+        category: "Sports",
+        question: "What sport is Bela Karolyi known for coaching?",
+        choices: ["Gymnastics", "Polo", "Badminton", "Billiards"],
+        answer: "Gymnastics"
+    },
+    {
+        category: "Sports",
+        question: "What is the only sport to be played on the moon?",
+        choices: ["Tennis", "Bowling", "Golf", "Football"],
+        answer: "Golf"
+    },
+    {
+        category: "Sports",
+        question: "How many minutes was the longest recorded point in the history of tennis?",
+        choices: ["47 minutes", "53 minutes", "29 minutes", "41 minutes"],
+        answer: "29 minutes"
+    },
+    {
+        category: "Sports",
+        question: "What NFL team was originally called the New York Titans?",
+        choices: ["Tennessee Titans", "Houstan Texans", "Minnesota Vikings", "New York Jets"],
+        answer: "New York Jets"
+    },
+    {
+        category: "Sports",
+        question: "What NFL team lost the first Super Bowl in 1970?",
+        choices: ["Minnesota Vikings", "San Diego Chargers", "Los Angeles Raiders", "Chicago Bears"],
+        answer: "Minnesota Vikings"
+    },
+    {
+        category: "Sports",
+        question: "Who was the youngest player to score 10,000 points in the NBA?",
+        choices: ["Kobe Bryant", "Derek Rose", "LeBron James", "Wilt Chamberlain"],
+        answer: "LeBron James"
+    },
+    {
+        category: "Sports",
+        question: "Who was the first NBA player to test positive for COVID-19?",
+        choices: ["Rudy Gobert", "Donovan Mitchell", "LeBron James", "Steven Adams"],
+        answer: "Rudy Gobert"
+    },
 ]
 
 let score = 0;
@@ -95,7 +154,7 @@ function startGame() {
 
 function nextQuestion() {
   if (!gameEnded) {
-    const randomIdx = Math.floor(Math.random()* 10);
+    const randomIdx = Math.floor(Math.random()* 20);
     randomQuestion = questions[randomIdx];
     const currentQuestion = randomQuestion.question;
     const choices = randomQuestion.choices;
