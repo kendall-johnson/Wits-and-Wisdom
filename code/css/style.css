@@ -1,260 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@600&family=Shrikhand&family=Tenor+Sans&display=swap');
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 h1 {
     text-align: center;
-    font-family: 'Archivo', sans-serif;
-    font-size: 3rem;
+    font-family: 'Shrikhand', cursive;
+    font-size: 6rem;
+    color: #ffffff;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    text-shadow: 6px 5px 10px #000000;
 }
 
-h3 {
-    text-align: center;
-    font-family: 'Tenor Sans', sans-serif;
-    padding-top: 10px;
+.card {
+    width: 383px;
+    height: 399px;
+    margin: 0 auto;
+    background-color: #F8FBFE;
+    border-radius: 19px;
+    z-index: 1;
+    margin-bottom: 35rem;
 }
+   
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+   
+.circle {
+    padding: 0 4px;
+}
+   
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+   
+.red {
+    background-color: #ff605c;
+}
+   
+.yellow {
+    background-color: #ffbd44;
+}
+   
+.green {
+    background-color: #00ca4e;
+}
+   
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+p {
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: #000000;
+}
+
 .category-page {
-    background-color: #e9e9e9; /* set a background color for the navbar */
+    color: black;
   }
   
 .categories-container {
-    display: flex; /* use flexbox to horizontally align the buttons */
-    justify-content: space-around; /* distribute the buttons evenly across the navbar */
-    align-items: center; /* vertically center the buttons */
-    height: 10rem; /* set the height of the navbar */
-    
+    display: grid;
+    grid-template-areas: "left right";
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
-  
+ 
 .categories-container button {
-    display: flex; /* use flexbox to align the content horizontally and vertically */
-    flex-direction: column; /* stack the content vertically */
-    justify-content: center; /* vertically center the content */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center; 
-    background-color: #76bcf5; /* set a background color for the buttons */
-    color: rgb(0, 0, 0); /* set the text color to white */
-    font-size: 16px; /* set the font size */
-    border: .25rem solid rgb(0, 0, 0);
-    border-radius: 1rem;
+    background-color: #ffffff; 
+    color: #23241d; 
+    font-size: 16px; 
+    border-color: #000000;
+    border-radius: 1.25rem;
+    box-shadow:
+    1.4px 1.4px 1.4px -17px rgba(0, 0, 0, 0.077),
+    3.9px 3.9px 3.9px -17px rgba(0, 0, 0, 0.11),
+    9.3px 9.3px 9.3px -17px rgba(0, 0, 0, 0.143),
+    31px 31px 31px -17px rgba(0, 0, 0, 0.22);
     cursor: pointer; 
-    padding: 14px 20px; /* add some padding */
+    padding: 14px 20px;
     height: 9rem;
     width: 9rem;
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    text-align: center;
 }
   
 .categories-container button:hover {
-    background-color: #53a1e2; /* darken the background color on hover */
-}
-
-/* .category-page {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "categories";
+    background-color: #ececec; 
     
 }
-
-.categories-container {
-    display: grid;
-    grid-template-areas: 
-    "sports popCulture"
-    "history technology";
-    grid-area: categories;
-    justify-content: space-evenly;
-}
-
-.categories-container button {
-    height: 15rem;
-    width: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: .25rem solid black;
-    border-radius: 1rem;
-    text-align: center;
-    
-}
-#select-category-header {
-    grid-area: header;
-    font-family: 'Tenor Sans', sans-serif;
-    text-align: center;
-}
-#sports {
-    display: grid;
-    grid-area: sports;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 1rem;
-}
-
-#pop-culture {
-    display: grid;
-    grid-area: popCulture;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-#history {
-    display: grid;
-    grid-area: history;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-#technology {
-    display: grid;
-    grid-area: technology;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-} */
-
-.gameplay-page {
-    display: grid;
-    grid-template-areas: 
-    "question question"
-    "choices choices"
-    "score skip-question";
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Tenor Sans', sans-serif;
-}
-
-/* main {
-    
-} */
-
-#question {
-    grid-area: question;
-    /* border: .15rem solid; */
-    border-radius: .20rem;
-    border-color: black;
-    border-bottom: .25rem solid;
-    border-top: .25rem solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: .5rem;
-}
-
-button {
-    font-family: 'Tenor Sans', sans-serif;
-    cursor: pointer; 
-}
-
-.choices-container button:hover {
-    background-color: #cecece;
-}
-
-.choices-container {
-    grid-area: choices;
-    display: grid;
-    grid-template-areas: 
-    "choice1 choice2"
-    "choice3 choice4";
-    grid-template-columns: 1fr 1fr;
-    visibility: visible;
-    filter: none;
-}
-
-.choices-container #choice-1 {
-    grid-row: 1;
-    grid-column: 1;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: white;
-    margin-bottom: 1rem;
-    margin-right: .25rem;
-    padding: 2rem;
-    font-size: 1.25rem;
-
-
-}
-
-.choices-container #choice-2 {
-    grid-row: 1;
-    grid-column: 2;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: white;
-    margin-bottom: 1rem;
-    margin-left: .25rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-
-}
-
-.choices-container #choice-3 {
-    grid-row: 2;
-    grid-column: 1;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: white;
-    margin-right: .25rem;
-    padding: 2rem;
-    font-size: 1.25rem;
-
-}
-
-.choices-container #choice-4 {
-    grid-row: 2;
-    grid-column: 2;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: white;
-    margin-left: .25rem;
-    padding: 1rem;
-    font-size: 1.25rem;
-
-}
-
-#score {
-    grid-area: score;
-    height: 2rem;
-    margin-top: 1rem;
-    margin-right: .25rem;
-    margin-bottom: 0;
-    /* padding: .5rem; */
-    border: .15rem solid;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Tenor Sans', sans-serif;
-
-}
-
-#skip-question {
-    grid-area: skip-question;
-    margin-top: 1rem;
-    margin-left: .25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: .50rem;
-    border-color: black;
-    background-color: rgb(255, 187, 187);
-    filter: none;
-}
-
-button.restart-button {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 6rem;
-    width: 20rem;
-    font-size: 3rem;
-    border: 3px solid;
-    border-radius: .5rem;
-    border-color: black;
-    background-color: rgb(142, 246, 142);
-}
-
-  

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code/css/gameplay.css">
+    <title>WITS & WISDOM</title>
+</head>
+<body>
+    <h1>WITS & WISDOM</h1>
+    <h2 id="question"></h2>
+   <div class="card">
+    <div class="tools">
+      <div class="circle">
+        <span class="red box"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow box"></span>
+      </div>
+      <div class="circle">
+        <span class="green box"></span>
+      </div>
+    </div>
+    <div class="card__content">
+        <div class="choices-container">
+            <button id="choice-1"></button> 
+            <button id="choice-2"></button>
+            <button id="choice-3"></button>
+            <button id="choice-4"></button>
+        </div>
+    </div>
+  </div>
+
+   <main class="gameplay-page">
+        <div class="scorecard">
+            <h2 id="score"></h2>
+            <button id="skip-question">SKIP QUESTION</button>
+        </div>
+    </main>
+    <script src="code/js/history.js"></script>
+</body>
+</html>
