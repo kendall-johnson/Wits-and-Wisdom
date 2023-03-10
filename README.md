@@ -5,7 +5,7 @@ Wits and Wisdom is an engaging trivia game that uses HTML, CSS, and JavaScript t
 ## :link: Live Link: 
 Click the following link to be redirected to the live version of the code, also, don't forget to have fun! [Wits and Wisdom](https://kendall-johnson.github.io/Wits-and-Wisdom/)
 
-## :camera_flash: Visuals and Helpful Insight :
+## :camera_flash: Visuals and Helpful Insight (Getting Started):
 ### Category Selection Page
 ![main page](/screenshots/startingScreen.png)
 When the user opens the webpage, they are greeted by a entry screen that prompts the user to select a category. Nothing else will display until they do so. This grants the user the ability to play the game in the way in which they most desire.
@@ -21,9 +21,9 @@ When the user gets 3 questions wrong they are met with a message alerting them t
 
 
 ## :computer: Technologies Used
-- HTML (HyperText Markup Language) ![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-- CSS (Cascading Style Sheets) ![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-- JavaScript ![JS badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+- ![HTML badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) HTML (HyperText Markup Language) 
+- ![CSS badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) CSS (Cascading Style Sheets) 
+- ![JS badge](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) JavaScript 
 
 ## The Code Behind The Program:
 ``` 
