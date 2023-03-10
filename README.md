@@ -1,9 +1,9 @@
 # Wits and Wisdom by Kendall Johnson
 ### Description:
-Wits and Wisdom is an engaging trivia game that uses HTML, CSS, and JS to deliver a dynamic and interactive experience. Through the implementation of DOM, Event Listeners, and several other key tools provided from the likes of JavaScript the user is given one question at a time with several choices of answers. If the user braves the challenge and selects the correct answer they are alerted with acknowledgement of valid choice and then move onto the next question. If they are wrong, they are alerted as such and then pushed to the next question, hopefully this time one they know the answer to. (MORE TO BE ADDED AND UPDATED AS THE GAME PROGRESSES IN DEVELOPMENT).
+Wits and Wisdom is an engaging trivia game that uses HTML, CSS, and JavaScript to deliver a dynamic and interactive experience. Through the implementation of DOM, Event Listeners, and several other key tools provided from the likes of JavaScript the user is fist given the option of which category they wish to select. Once a category is selected, at a pace of one question at a time, the user is given four choices of answers and they must decipher which is the correct one. If the user braves the challenge and selects the correct answer they are alerted with acknowledgement of a valid choice via the score increasing and then immediately move onto the next question until they get a total of 5 correct. After 5 correct answers, they are greeted with a custom congratulations message and are prompted to play again. If they are wrong, behind the scenes the program takes note of it and then pushes them to the next question, if the user gets three answers wrong they fail the quiz and are promted to play again. When the user clicks play again, they are brought back to the initial screen to start the program all over.
 
 ## :link: Live Link: 
-Click the following link to be redirected to the live version of the code, also, don't forget to have fun! [(url.com)]
+Click the following link to be redirected to the live version of the code, also, don't forget to have fun! [(https://kendall-johnson.github.io/Wits-and-Wisdom/)]
 
 ## :camera_flash: Visuals and Helpful Insight :
 ### Category Selection Page
@@ -25,7 +25,22 @@ When the user gets 3 questions wrong they are met with a message alerting them t
 - CSS (Cascading Style Sheets)
 - JavaScript
 
-
+## The Code Behind The Program:
+``` function nextQuestion() {
+  if (!gameEnded) {
+    const randomIdx = Math.floor(Math.random()* 10);
+    randomQuestion = questions[randomIdx];
+    const currentQuestion = randomQuestion.question;
+    const choices = randomQuestion.choices;
+    questionEl.innerHTML = currentQuestion;
+    for (let i = 0; i < choices.length; i++) { 
+      const choiceEl = choicesEls[i];
+      choiceEl.innerHTML = choices[i];
+    }
+  }  
+}
+```
+##### Although, it appears relatively short in nature, this block of code serves as the legs to this walking machine. It renders a random question based on the category selected and iterates through the beginning array of objects to grab not only that random question, but its accompanying answer choices. Without this block of code, almost nothing else functions. The harmony within all the separate gears turning here are like the melody of a song you cannot get out of your head. 
 
 ## :chart_with_upwards_trend: Look Forward
 I have a few key changes I hope to implement in the near future to increase the functionality of the game. They are as follows: 
