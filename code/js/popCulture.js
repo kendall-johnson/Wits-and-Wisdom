@@ -105,7 +105,7 @@ const questions = [
         category: "Pop-Culture",
         question: "Which hard seltzer did America face a shortage of in 2019?",
         choices: ["Happy Dads", "Bud Light Seltzer", "White Claw", "Coors Light Seltzer"],
-        answer: "Cosmo"
+        answer: "White Claw"
     },
     {
         category: "Pop-Culture",
@@ -117,7 +117,7 @@ const questions = [
         category: "Pop-Culture",
         question: "Kim Kardashian and Kris Humphries were married for how many days?",
         choices: ["72", "14", "325", "117"],
-        answer: "14"
+        answer: "72"
     },
 ]
 

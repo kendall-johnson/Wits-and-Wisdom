@@ -31,7 +31,7 @@ const questions = [
     },
     {
         category: "Technology",
-        question: "What computer and printer giant was founded in 1939 in Palo, Alto, CA?",
+        question: "What computer and printer giant was founded in 1939 in Palo Alto, CA?",
         choices: ["Hewlett-Packard", "Dell", "Brother", "Epson"],
         answer: "Hewlett-Packard"
     },
@@ -59,7 +59,66 @@ const questions = [
         choices: ["2006", "2007", "2009", "2012"],
         answer: "2007"
     },
-    
+    {
+        category: "Technology",
+        question: "What is the name of the first search engine ever created?",
+        choices: ["Google", "Yahoo!", "AltaVista", "Bing"],
+        answer: "AltaVista"
+    },
+    {
+        category: "Technology",
+        question: "What does the acronym 'PDF' stand for?",
+        choices: ["Portable Document Format", "Personal Data File", "Printable Document File", "Programmed Data File"],
+        answer: "Portable Document Format"
+    },
+    {
+        category: "Technology",
+        question: "What was the first commercially successful video game?",
+        choices: ["Pong", "Space Invaders", "Donkey Kong", "Tetris"],
+        answer: "Pong"
+    },
+    {
+        category: "Technology",
+        question: "What is the name of the first mass-produced computer?",
+        choices: ["ENIAC", "Apple I", "Altair 8800", "IBM PC"],
+        answer: "IBM PC"
+    },
+    {
+        category: "Technology",
+        question: "What year was the World Wide Web invented?",
+        choices: ["1985", "1991", "1995", "2000"],
+        answer: "1991"
+    },
+    {
+        category: "Technology",
+        question: "What is the name of the first smartphone?",
+        choices: ["BlackBerry", "iPhone", "Palm Pilot", "Nokia Communicator"],
+        answer: "IBM Simon"
+    },
+    {
+        category: "Technology",
+        question: "What is the name of the first graphical web browser?",
+        choices: ["Mosaic", "Netscape Navigator", "Internet Explorer", "Firefox"],
+        answer: "Mosaic"
+    },
+    {
+        category: "Technology",
+        question: "What is the name of the first commercially available computer mouse?",
+        choices: ["Xerox PARC", "Logitech Mouse", "Apple Mouse", "Microsoft Mouse"],
+        answer: "Xerox PARC"
+    },
+    {
+        category: "Technology",
+        question: "What was the first video ever uploaded to YouTube?",
+        choices: ["Me at the zoo", "Charlie bit my finger", "Evolution of dance", "Baby Shark Dance"],
+        answer: "Me at the zoo"
+    },
+    {
+        category: "Technology",
+        question: "What is the name of the first consumer digital camera?",
+        choices: ["Sony Mavica", "Kodak DCS", "Canon PowerShot", "Nikon Coolpix"],
+        answer: "Dycam Model 1"
+    },
 ]
 
 let score = 0;

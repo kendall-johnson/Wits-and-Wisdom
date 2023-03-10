@@ -59,6 +59,66 @@ const questions = [
         choices: ["Thor", "Hades", "Zeus", "Achilles"],
         answer: "Zeus"
     },
+    {
+        category: "History",
+        question: "In what year did the United States declare independence from Great Britain?",
+        choices: ["1776", "1789", "1792", "1801"],
+        answer: "1776"
+    },
+    {
+        category: "History",
+        question: "Who was the first female prime minister of the United Kingdom?",
+        choices: ["Margaret Thatcher", "Angela Merkel", "Theresa May", "Indira Gandhi"],
+        answer: "Margaret Thatcher"
+    },
+    {
+        category: "History",
+        question: "What was the name of the first emperor of Rome?",
+        choices: ["Julius Caesar", "Augustus", "Nero", "Caligula"],
+        answer: "Augustus"  
+    },
+    {
+        category: "History",
+        question: "Which famous battle was fought on June 18, 1815?",
+        choices: ["Battle of Gettysburg", "Battle of Waterloo", "Battle of Trafalgar", "Battle of the Somme"],
+        answer: "Battle of Waterloo"
+    },
+    {
+        category: "History",
+        question: "Who was the first African American to serve as President of the United States?",
+        choices: ["Barack Obama", "Joe Biden", "George W. Bush", "Bill Clinton"],
+        answer: "Barack Obama"
+    },
+    {
+        category: "History",
+        question: "Which infamous emperor of Rome was known for his extravagance and cruelty?",
+        choices: ["Caligula", "Nero", "Tiberius", "Hadrian"],
+        answer: "Caligula"
+    },
+    {
+        category: "History",
+        question: "What was the name of the ship that Charles Darwin sailed on during his famous voyage?",
+        choices: ["Beagle", "Endeavour", "Discovery", "Bounty"],
+        answer: "Beagle"
+    },
+    {
+        category: "History",
+        question: "What was the name of the first satellite to orbit the Earth?",
+        choices: ["Sputnik 1", "Explorer 1", "Vanguard 1", "Luna 1"],
+        answer: "Sputnik 1" 
+    },
+    {
+        category: "History",
+        question: "Who wrote the famous document 'Common Sense' that advocated for American independence?",
+        choices: ["Thomas Jefferson", "John Adams", "George Washington", "Thomas Paine"],
+        answer: "Thomas Paine"
+    },
+    {
+        category: "History",
+        question: "In what year did World War II end?",
+        choices: ["1945", "1941", "1943", "1947"],
+        answer: "1945"    
+    },
 ]
 
 
