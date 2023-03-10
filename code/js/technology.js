@@ -154,7 +154,7 @@ function startGame() {
 
 function nextQuestion() {
   if (!gameEnded) {
-    const randomIdx = Math.floor(Math.random()* 10);
+    const randomIdx = Math.floor(Math.random()* 20);
     randomQuestion = questions[randomIdx];
     const currentQuestion = randomQuestion.question;
     const choices = randomQuestion.choices;
