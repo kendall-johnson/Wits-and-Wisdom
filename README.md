@@ -4,8 +4,9 @@ Wits and Wisdom is an engaging trivia game that uses HTML, CSS, and JS to delive
 
 ## Screenshots
 ![main page](/screenshots/startingScreen.png)
-When the user opens the webpage, they are automatically in the game. At this point they see the initial question, answer choices, their current score (which will always be zero at this point since they are just starting), and lastly the "Skip Question" button which allows users to skip to a different question if they are lost or confused.
+When the user opens the webpage, they are greeted by a entry screen that prompts the user to select a category. Nothing else will display until they do so. This grants the user the ability to play the game in the way in which they most desire.
 ![when you play the game](/screenshots/gameplay.png)
+Once the user selects a category, they are launched into the game and displayed with a randomly selected question and its accompanying possible answer choices. Along with that, as the user continues to play, the score will update whenever they get a question correct and if the user is ever completely lost and does not know what to choose for an answer they can skip the question using the implemented button.
 ![when you win the game](/screenshots/winScreen.png)
 When the user reaches a score of 5, they are met with a winning message, the unnecessary elements including the answer choices get blurred out and you are left with the score and a "Play Again" button to restart the game when you are ready.
 ![when you lose the game](/screenshots/loseScreen.png)
