@@ -3,7 +3,7 @@
 Wits and Wisdom is an engaging trivia game that uses HTML, CSS, and JavaScript to deliver a dynamic and interactive experience. Through the implementation of DOM, Event Listeners, and several other key tools provided from the likes of JavaScript the user is fist given the option of which category they wish to select. Once a category is selected, at a pace of one question at a time, the user is given four choices of answers and they must decipher which is the correct one. If the user braves the challenge and selects the correct answer they are alerted with acknowledgement of a valid choice via the score increasing and then immediately move onto the next question until they get a total of 5 correct. After 5 correct answers, they are greeted with a custom congratulations message and are prompted to play again. If they are wrong, behind the scenes the program takes note of it and then pushes them to the next question, if the user gets three answers wrong they fail the quiz and are promted to play again. When the user clicks play again, they are brought back to the initial screen to start the program all over.
 
 ## :link: Live Link: 
-Click the following link to be redirected to the live version of the code, also, don't forget to have fun! [(https://kendall-johnson.github.io/Wits-and-Wisdom/)]
+Click the following link to be redirected to the live version of the code, also, don't forget to have fun! ![(https://kendall-johnson.github.io/Wits-and-Wisdom/)]
 
 ## :camera_flash: Visuals and Helpful Insight :
 ### Category Selection Page
@@ -21,9 +21,9 @@ When the user gets 3 questions wrong they are met with a message alerting them t
 
 
 ## :computer: Technologies Used
-- HTML (HyperText Markup Language)
-- CSS (Cascading Style Sheets)
-- JavaScript
+- HTML (HyperText Markup Language) ![(https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]
+- CSS (Cascading Style Sheets) ![(https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)]
+- JavaScript ![(https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)]
 
 ## The Code Behind The Program:
 ``` function nextQuestion() {
